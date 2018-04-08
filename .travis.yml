@@ -1,2 +1,8 @@
 language: csharp
 solution: WebAPIProject.sln
+install:
+  - nuget restore WebAPIProject.sln
+  - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
+script:
+  - xbuild /p:Configuration=Release WebAPIProject.sln
+  - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./WeatherAPIProject/bin/Release/WeatherAPIProject.dll
