@@ -1,5 +1,5 @@
 ﻿
-namespace UnitTestProject1.Steps
+namespace WeatherAPIProject.Steps
 {
     public class Credentials
     {

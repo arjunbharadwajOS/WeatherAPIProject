@@ -5,7 +5,7 @@ using Newtonsoft.Json.Linq;
 using WeatherAPIProject.FunctionLibrary;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TechTalk.SpecFlow.Assist;
-using UnitTestProject1.Steps;
+using WeatherAPIProject.Steps;
 
 namespace WeatherAPIProject.Steps
 {
@@ -117,7 +117,11 @@ namespace WeatherAPIProject.Steps
                 }
 
             }
-            
+
+            if (counter == 0)
+                Assert.Fail("API Limitation provides weather forecast for thursday if current day is friday or saturday");
+
+
         }
 
 

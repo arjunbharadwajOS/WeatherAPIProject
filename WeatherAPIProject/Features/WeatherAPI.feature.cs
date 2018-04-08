@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace UnitTestProject1.Features
+namespace WeatherAPIProject.Features
 {
     using TechTalk.SpecFlow;
     
@@ -61,7 +61,7 @@ namespace UnitTestProject1.Features
             if (((testRunner.FeatureContext != null) 
                         && (testRunner.FeatureContext.FeatureInfo.Title != "WeatherAPI")))
             {
-                global::UnitTestProject1.Features.WeatherAPIFeature.FeatureSetup(null);
+                global::WeatherAPIProject.Features.WeatherAPIFeature.FeatureSetup(null);
             }
         }
         
